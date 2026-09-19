@@ -1,0 +1,4 @@
+var cell = 67
+var fa = (cell    *    5     /8) + 54
+document.write(fa.tofixed(5))
+console.log(fa.tofixed(5))
