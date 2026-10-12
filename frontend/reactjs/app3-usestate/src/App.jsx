@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BiCalendar } from 'react-icons/bi'
+import ActionButton from './components/ActionButton'
 
 const App = () => {
   // let value = "Name"
@@ -26,6 +27,20 @@ const App = () => {
 
   return (
     <div>
+
+      <div className='m-1'>
+        <ActionButton title="Explore more" />
+      </div>
+      <div className='m-1'>
+        <ActionButton />
+      </div>
+      <div className='m-1'>
+        <ActionButton />
+      </div>
+      <div className='m-1'>
+        <ActionButton />
+      </div>
+
       <div>
         <button onClick={() => updateCounter("s")} className='p-2 bg-blue-800 cursor-pointer text-white rounded shadow hover:bg-blue-900 hover:shadow-lg'>
           -

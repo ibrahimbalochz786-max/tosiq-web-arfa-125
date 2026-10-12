@@ -70,5 +70,5 @@
 6 Oct, 2026 (Css types and tailwindcss)
 	- https://www.youtube.com/watch?v=DSbMMwc8Igc
 
-12 Oct, 2026 ()
+12 Oct, 2026 (useState, component)
 	- https://www.youtube.com/watch?v=ivAw_3wT4_E
