@@ -72,3 +72,6 @@
 
 12 Oct, 2026 (useState, component)
 	- https://www.youtube.com/watch?v=ivAw_3wT4_E
+
+13 Oct, 2026 (components, props, childrens, useState tabs)
+	- https://www.youtube.com/watch?v=hcmLX0wLqyg
