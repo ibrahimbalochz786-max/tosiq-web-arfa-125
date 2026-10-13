@@ -1,11 +1,41 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SimpleButton from './components/SimpleButton'
 import InputField from './components/InputField'
 import Card from './components/Card'
 
 const App = () => {
+  const [activeTab, setActiveTab] = useState("settings")
+
+  const changeTab = (currentTab) => {
+    setActiveTab(currentTab)
+  }
+
   return (
     <div className='m-5'>
+      {/* Active tab: {activeTab} */}
+      <div className='my-3 shadow max-w-lg p-3 rounded'>
+        {/* tab buttons */}
+        <div className='flex gap-5 border-b border-gray-200'>
+          <button onClick={() => changeTab("settings")}>Settings</button>
+          <button onClick={() => changeTab("locations")}>Locations</button>
+          <button onClick={() => changeTab("services")}>Services</button>
+        </div>
+
+        {/* tab content */}
+        <div className='mt-3 p-3 rounded bg-gray-200'>
+          {
+            activeTab == "settings" ?
+            <div>Setting content</div> :
+            activeTab == "locations" ?
+            <div>Location content</div> :
+            activeTab == "services" &&
+            <div>Service content</div>
+          }
+        </div>
+      </div>
+
+      <hr />
+      
       <div className='my-3'>
         <h2>Heading: Card component ui with children</h2>
         
