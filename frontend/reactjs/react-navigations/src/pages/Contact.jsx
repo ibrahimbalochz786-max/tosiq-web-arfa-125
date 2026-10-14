@@ -7,8 +7,12 @@ const Contact = () => {
     <WebLayout>
       <div>
         Contact us page,
-        <a href={SOCIALS.facebook.url}>{SOCIALS.facebook.name}</a>
-        <a href={SOCIALS.linkedin.url}>{SOCIALS.linkedin.name}</a>
+        <a href={SOCIALS.facebook.url}>
+          {SOCIALS.facebook.name}
+        </a>
+        <a href={SOCIALS.linkedin.url}>
+          {SOCIALS.linkedin.name}
+        </a>
       </div>
     </WebLayout>
   )
