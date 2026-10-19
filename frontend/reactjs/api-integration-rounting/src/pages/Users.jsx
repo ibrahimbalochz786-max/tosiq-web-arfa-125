@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import axios from 'axios'
 import {USERS_API} from '../utils/apis.js'
+import { Link } from 'react-router'
 
 const Users = () => {
     const [users, setUsers] = useState([])
@@ -33,6 +34,9 @@ const Users = () => {
                                         </div>
                                         <div className='text-gray-500'>
                                             {usr.company.title}
+                                        </div>
+                                        <div className='mt-5'>
+                                            <Link to={`/users/${usr.id}`} className='text-blue-500'>View more</Link>
                                         </div>
                                     </div>
                                 </div>
