@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.app-name {
+    color: rgb(123, 213, 123)
+}
