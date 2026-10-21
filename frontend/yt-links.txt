@@ -82,5 +82,8 @@
 19 Oct, 2026 (api integration, dynamic routing)
 	- https://www.youtube.com/watch?v=i2aVEkoCqEE
 
-20 Oct, 2026 (React revise)
+20 Oct, 2026 (zustand, React revise)
 	- https://www.youtube.com/watch?v=lQrvcWj61zw
+
+21 OCt, 2026 (Second half, revise)
+	- https://www.youtube.com/watch?v=Wp_fzSUt-7U

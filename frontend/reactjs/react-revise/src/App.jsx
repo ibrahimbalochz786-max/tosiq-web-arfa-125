@@ -1,26 +1,16 @@
 import React from 'react'
-import SimpleButton from './components/SimpleButton'
-import BoxWrraper from './components/BoxWrraper'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import Home from './pages/Home'
+import About from './pages/About'
 
 const App = () => {
   return (
-    <div>
-      <div className='bg-slate-900 app-name'>
-        App
-      </div>
-      <div>
-        <BoxWrraper>
-          <ins>This is small tag</ins>
-        </BoxWrraper>
-      </div>
-      <div>
-        <BoxWrraper>
-          <SimpleButton title="Contact us" />
-          <SimpleButton title="Explore more"  />
-          <SimpleButton title="Join us"  />
-        </BoxWrraper>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
