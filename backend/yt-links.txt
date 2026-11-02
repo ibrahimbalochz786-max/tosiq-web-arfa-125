@@ -1,0 +1,8 @@
+26 Oct, 2026 (backend intro)
+	- https://www.youtube.com/watch?v=-7QQC9_yOtg
+
+27 Oct, 2026 (backend api folder structure, db connection string)
+	- https://www.youtube.com/watch?v=jfkrgYxFC0o
+
+2 Nov, 2026 (moduler structure, db connection)
+	- https://www.youtube.com/watch?v=BhLwLT2AxOs
