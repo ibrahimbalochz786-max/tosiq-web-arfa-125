@@ -13,11 +13,7 @@ const employeeSchema = new mongoose.Schema({
     designation: { 
         type: String,
         required: true
-    },
-    salary: { 
-        type: String,
-        required: true
-    },
+    }
 })
 
 const Employee = mongoose.model("Employee", employeeSchema) // => employees 

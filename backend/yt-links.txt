@@ -6,3 +6,6 @@
 
 2 Nov, 2026 (moduler structure, db connection)
 	- https://www.youtube.com/watch?v=BhLwLT2AxOs
+
+3 Nov, 2026 (api integration, showing employees record)
+	- https://www.youtube.com/watch?v=uk3Zf2fH6-8
