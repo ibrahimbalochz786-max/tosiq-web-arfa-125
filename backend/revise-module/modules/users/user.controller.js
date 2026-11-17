@@ -1,9 +1,12 @@
+import User from './user.model.js'
+
 export const getAllUsers = async (req, res) => {
     try {
-        const data = [ "Ali", "Usman", "Wahid", "Samar" ]
+        // const data = [ "Ali", "Usman", "Wahid", "Samar" ]
+        const users = await User.find({})
         return res.send({
             status: true,
-            data
+            users
         })
     } catch (error) {
         console.log(error)
