@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from  'axios'
+import { Link } from 'react-router'
 
 const Users = () => {
     const [users, setUsers] = useState([])
@@ -22,6 +23,9 @@ const Users = () => {
   return (
     <div>
       <h1>All users</h1>
+      <div>
+        <Link to={'/users/add'}>Add new user</Link>
+      </div>
       <div>
         <ul>
             { users.map((user, i) => {
