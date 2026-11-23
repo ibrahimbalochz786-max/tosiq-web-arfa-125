@@ -46,7 +46,7 @@ const Users = () => {
                 <li key={i}>
                     <div>
                         <h3>
-                            <span> <button>Edit</button> | <button onClick={() => handleDeleteUser(user._id)}>Delete</button> </span>
+                            <span> <Link to={`/users/edit/${user._id}`}>Edit</Link> | <button onClick={() => handleDeleteUser(user._id)}>Delete</button> </span>
                             {user.name} - <small>{user.email}</small>
                         </h3>
                     </div>

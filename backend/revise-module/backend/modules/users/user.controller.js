@@ -42,3 +42,30 @@ export const deleteUser = async (req, res) => {
         console.log(error)
     }
 }
+
+export const singleUser = async (req, res) => {
+    const { id } = req.params
+    if(!id) {
+        return res.send({
+            status: false,
+            message: "ID not found!"
+        })
+    }
+    try {
+        const user = await User.findById({_id: id})
+        if(!user) {
+            return res.send({
+                status: false,
+                message: "User not found"
+            })
+        }
+
+        return res.send({
+            status: true,
+            user
+        })
+
+    } catch (error) {
+        console.log(error)
+    }
+}
