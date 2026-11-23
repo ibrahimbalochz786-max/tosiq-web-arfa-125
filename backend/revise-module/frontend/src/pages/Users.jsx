@@ -16,6 +16,19 @@ const Users = () => {
         }
     }
 
+    const handleDeleteUser = async (id) => {
+        if(!confirm("Delete this record forever?")) return;
+        try {
+            const response = await axios.delete(`http://localhost:3000/all-users/delete/${id}`)
+            if (response.data.status == true) {
+                console.log(response.data.message)
+                setUsers(response.data.users)
+            }
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     useEffect(() => {
         getUsers()
     }, [])
@@ -33,6 +46,7 @@ const Users = () => {
                 <li key={i}>
                     <div>
                         <h3>
+                            <span> <button>Edit</button> | <button onClick={() => handleDeleteUser(user._id)}>Delete</button> </span>
                             {user.name} - <small>{user.email}</small>
                         </h3>
                     </div>
