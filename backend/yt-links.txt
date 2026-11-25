@@ -27,3 +27,6 @@
 
 23 Nov, 2026 (delete api, edit form with api integration)
 	- https://www.youtube.com/watch?v=J97OP3ERHnA
+	
+24 Nov, 2026 (PMS - Mini project)
+	- https://www.youtube.com/watch?v=WPeIjvcAEPI
